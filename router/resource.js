@@ -6,6 +6,8 @@ const entry = {
   // 活动页
   "activity-css": "./src/pages/activity/index.css",
   "activity-js": "./src/pages/activity/index.js",
+
+  "vue-template-js": "./src/pages/vue-template/main.js"
 };
 
 module.exports = {
