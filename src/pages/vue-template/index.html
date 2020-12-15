@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <title>vue模板</title>
+  </head>
+
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .webpack-home {
+      background-color: #303133;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .webpack-home__main {
+      user-select: none;
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .webpack-home__footer {
+      width: 100%;
+      flex-grow: 0;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .webpack-home__footer > a {
+      font-size: 12px;
+      color: #ababab;
+      text-decoration: none;
+    }
+
+    .webpack-home__loading {
+      height: 32px;
+      width: 32px;
+      margin-bottom: 20px;
+    }
+
+    .webpack-home__title {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .webpack-home__sub-title {
+      color: #ababab;
+      font-size: 12px;
+    }
+
+    .ql-editor {
+      min-height: 150px;
+    }
+
+    .ql-snow .ql-picker {
+      height: 36px !important;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 3),
+      only screen and (min--moz-device-pixel-ratio: 3),
+      only screen and (-o-min-device-pixel-ratio: 3/1),
+      only screen and (min-device-pixel-ratio: 3),
+      only screen and (min-resolution: 458dpi),
+      only screen and (min-resolution: 3dppx) {
+      .van-tabbar--fixed {
+        padding-bottom: 15px !important;
+      }
+    }
+  </style>
+
+  <body>
+    <div id="app">
+      <div class="webpack-home">
+        <div class="webpack-home__main">
+          <img
+            class="webpack-home__loading"
+            src="./svg/loading-spin.svg"
+            alt="loading"
+          />
+          <div class="webpack-home__title">
+            正在加载资源
+          </div>
+          <div class="webpack-home__sub-title">
+            初次加载资源可能需要较多时间 请耐心等待
+          </div>
+        </div>
+        <div class="webpack-home__footer"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  </body>
+</html>
